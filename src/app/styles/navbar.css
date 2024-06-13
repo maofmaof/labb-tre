@@ -1,0 +1,41 @@
+.navbar-container {
+    border: 1px solid black;
+    width: 60%;
+    margin: auto;
+}
+
+.navbar-header {
+    font-size: 40px;
+}
+
+.navbar-link {
+    text-decoration: none;
+}
+
+.navbar-list {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.navbar-item {
+    margin: auto;
+    font-size: 25px;
+}
+
+.navbar-item:link {
+    text-decoration: none;
+}
+
+.navbar-item:visited {
+    text-decoration: none;
+}
+
+.navbar-item:hover {
+    text-decoration: none;
+}
+
+.navbar-item:active {
+    text-decoration: none;
+}
