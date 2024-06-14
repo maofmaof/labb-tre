@@ -1,19 +1,24 @@
+import { useEffect } from "react";
 import "../styles/imageCard.css"
 
-function ImageCards(props) {
+function ImageCards({ images }) {
 
- // author, width, , height, url, 
-
+    useEffect(() => {
+        console.log(images)
+    }, [])
     return (
 
-        <div className="imagecard-container">
-            <h2 className="h2"> {props.author} </h2>
-            <img className="img"
-                src={props.url}
-                width={500}
-                height={250}
-            />
-           
+        <div className="gallery-card-container" >
+            {images.map((e) => {
+                return <div>
+                    <h2 className="h2"> {e.author} </h2>
+                    <img className="img" src={e.download_url} 
+                    width={550} height={300}
+                    />
+                </div>
+            })}
+
+
         </div>
     )
 }

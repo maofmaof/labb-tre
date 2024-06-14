@@ -1,0 +1,10 @@
+.pagination-container {
+    width: 70%;
+}
+
+.pagination-list {
+background-color: beige;
+}
+.pagination-list-item {
+font-size: 30px;
+}
