@@ -9,8 +9,8 @@ function Pictures() {
     const [isLoading, setIsLoading] = useState(true)
     const [images, setImages] = useState([])
     const [currentPage, setCurrentPage] = useState(1)
-    const [imagesPerPage, setImagesPerPage] = useState(6) 
-
+    const [imagesPerPage, setImagesPerPage] = useState(6)
+    //https://www.youtube.com/watch?v=IYCa1F-OWmk
     const indexOfLastImage = currentPage * imagesPerPage;
     const indexOfFirstImage = indexOfLastImage - imagesPerPage
     const currentImages = images.slice(indexOfFirstImage, indexOfLastImage);
@@ -30,12 +30,11 @@ function Pictures() {
 
     function handlePagination(pageNumber) {
         setCurrentPage(pageNumber)
- 
     }
 
     return (
         <div className="gallery-container">
-            <h1> Gallery here</h1>
+            <h2> Gallery</h2>
             {isLoading ? <h1>Page is loading...</h1> :
                 <div className="gallery-card-container">
                     <ImageCard images={currentImages} />
@@ -44,7 +43,9 @@ function Pictures() {
             <Pagination
                 handlePagination={handlePagination}
                 length={images.length / imagesPerPage}
+                currentPage={currentPage}
             />
+            
         </div>
     )
 }

@@ -11,7 +11,7 @@ function ImageCards({ images }) {
         <div className="gallery-card-container" >
             {images.map((e) => {
                 return <div>
-                    <h2 className="h2"> {e.author} </h2>
+                    <h3 className="h2"> photo by {e.author} </h3>
                     <img className="img" src={e.download_url} 
                     width={550} height={300}
                     />

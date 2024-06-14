@@ -1,13 +1,13 @@
 import Link from 'next/link';
 import '../styles/navbar.css';
-
 function Navbar() {
 
     return (
         <>
             <div className='navbar-container'>
                 <ul className='navbar-list'>
-                    <h1 className='navbar-header'>Navbar</h1>
+                    <h1 className='navbar-header'>Nonsense </h1>
+
                     <li className='navbar-item'>
                         <Link className="navbar-link" href="/gallery"><p>gallery</p> </Link>
                     </li>

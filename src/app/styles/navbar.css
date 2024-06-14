@@ -1,11 +1,8 @@
 .navbar-container {
-    border: 1px solid black;
+    background-color: rgb(251, 243, 231);
     width: 60%;
     margin: auto;
-}
-
-.navbar-header {
-    font-size: 40px;
+    border-radius : 10px;
 }
 
 .navbar-link {
@@ -16,7 +13,6 @@
     list-style-type: none;
     display: flex;
     flex-wrap: wrap;
-
 }
 
 .navbar-item {
@@ -33,7 +29,7 @@
 }
 
 .navbar-item:hover {
-    text-decoration: none;
+    text-decoration-line: underline;
 }
 
 .navbar-item:active {

@@ -1,10 +1,19 @@
 .pagination-container {
     width: 70%;
+    margin: auto;
 }
 
-.pagination-list {
-background-color: beige;
-}
 .pagination-list-item {
-font-size: 30px;
+font-size: 25px;
+margin: 10px;
+background-color: rgb(243, 237, 206);
+border : none;
+border-radius: 5px;
+}
+.pagination-list-item:hover {
+    text-decoration: underline;
+}
+
+.active-pag{
+    font-size: 35px;
 }
