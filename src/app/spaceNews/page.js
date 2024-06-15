@@ -25,13 +25,12 @@ function SpaceNews() {
     return <div className="spacenews-container">
 
         {isLoading ? <h1>It's loading..</h1> :
-
             <div> <button onClick={() => {
                 fetchSpaceNews()
-            }}>Fetch more news</button> 
-            {spaceNewsArr.map((e, i) => {
-                return <SpaceCard key={e.id} info={e} />
-            })}
+            }}>Fetch more news</button>
+                {spaceNewsArr.map((e, i) => {
+                    return <SpaceCard key={e.id} info={e} />
+                })}
             </div>
         }
 
