@@ -1,4 +1,5 @@
 "use client";
+import React from 'react';
 import "../styles/gallery.css"
 import ImageCard from "../components/imageCards.js"
 import { useEffect, useState } from "react"
@@ -10,7 +11,6 @@ function Pictures() {
     const [images, setImages] = useState([])
     const [currentPage, setCurrentPage] = useState(1)
     const [imagesPerPage, setImagesPerPage] = useState(6)
-    //https://www.youtube.com/watch?v=IYCa1F-OWmk
     const indexOfLastImage = currentPage * imagesPerPage;
     const indexOfFirstImage = indexOfLastImage - imagesPerPage
     const currentImages = images.slice(indexOfFirstImage, indexOfLastImage);
@@ -34,7 +34,7 @@ function Pictures() {
 
     return (
         <div className="gallery-container">
-            <h2> Gallery</h2>
+            <h2>Gallery</h2>
             {isLoading ? <h1>Page is loading...</h1> :
                 <div className="gallery-card-container">
                     <ImageCard images={currentImages} />
@@ -45,7 +45,7 @@ function Pictures() {
                 length={images.length / imagesPerPage}
                 currentPage={currentPage}
             />
-            
+
         </div>
     )
 }

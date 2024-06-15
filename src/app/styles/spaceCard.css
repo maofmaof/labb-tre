@@ -1,0 +1,17 @@
+
+.spacecard-header {
+    text-align: center;
+    margin: auto;
+    margin: 10px;
+}
+.spacecard-image {
+border-radius: 5px;
+margin-top: 10px;
+}
+.spacecard-list-items {
+    margin: auto;
+    width: 600px;
+    word-wrap: break-word;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}

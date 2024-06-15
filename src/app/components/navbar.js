@@ -9,13 +9,13 @@ function Navbar() {
                     <h1 className='navbar-header'>Nonsense </h1>
 
                     <li className='navbar-item'>
-                        <Link className="navbar-link" href="/gallery"><p>gallery</p> </Link>
+                        <Link className="navbar-link" href="/gallery"><p>Photo gallery</p> </Link>
                     </li>
                     <li className='navbar-item'>
-                        <Link className="navbar-link" href="/"><p>home</p> </Link>
+                        <Link className="navbar-link" href="/spaceNews"><p>Space news feed</p> </Link>
                     </li>
                     <li className='navbar-item'>
-                        <Link className="navbar-link" href="/about"><p>about</p> </Link>
+                        <Link className="navbar-link" href="/"><p>Weather app</p> </Link>
                     </li>
                 </ul>
             </div>
